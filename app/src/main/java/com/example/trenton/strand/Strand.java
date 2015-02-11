@@ -29,7 +29,7 @@ public class Strand extends ActionBarActivity {
         for (int i = 1; i <= 10; ++i) {
         }
     }
-
+//f
 }
 
 
