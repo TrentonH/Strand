@@ -11,25 +11,30 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Load File"
+        android:text="Load"
         android:id="@+id/loadF"
-        android:layout_alignTop="@+id/wrightF" />
+        android:onClick="loadF"
+        android:layout_alignTop="@+id/Create"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wright File"
-        android:id="@+id/wrightF"
+        android:text="Create"
+        android:id="@+id/Create"
         android:layout_above="@+id/stop"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="89dp" />
+        android:layout_marginBottom="89dp"
+        android:onClick="Create"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop Files"
+        android:text="Clear"
         android:id="@+id/stop"
+        android:onClick="Stop"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
@@ -37,9 +42,16 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/progressBar2"
-        android:layout_toLeftOf="@+id/wrightF"
+        android:id="@+id/progressBar"
+        android:layout_toLeftOf="@+id/Create"
         android:layout_alignLeft="@+id/stop"
         android:layout_alignStart="@+id/stop" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myListView"
+        android:layout_below="@+id/stop"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
